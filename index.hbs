@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="{{asset "css/app.css"}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    {{ghost_head}}
+</head>
+{{ghost_head}}
+<body id="ttt" class="ins-body">
+    <nav class="hide" id="desktop-nav">
+        <ul>
+            <li id="home-nav"><a href="http://alikayarnell.com">Home</a>
+                <div class='underline'></div>
+            </li>
+            <li id="novel-nav"><a href="http://alikayarnell.com/index.html#novel">Debut Novel</a>
+                <div class='underline'></div>
+            </li>
+            <li id="nav-logo-desktop"></li>
+            <li class="current" id="insightings-nav"><a href="#http://alikayarnell.com/blog">Insightings</a>
+                <div class='underline'></div>
+            </li>
+            <li id="bio-nav" class="last"><a href="http://alikayarnell.com/index.html#bio">Biography</a>
+                <div class='underline'></div>
+            </li>
+        </ul>
+    </nav>
+    <section id="ins-hero">
+        <div id="ins-hero-icon"></div>
+        <div id="ins-hero-type"></div>
+        <div id="ins-white-brush"></div>
+    </section>
+    <div class='menu-overlay hide'>
+        <div class="menu-overlay-exit"></div>
+        <div class="menu-overlay-logo"></div>
+        <ul class="menu-overlay-nav">
+            <li class="li-home"><a href='http://alikayarnell.com'>Home</a>
+                <div class='underline'></div>
+            </li>
+            <li class="li-novel"><a href='http://alikayarnell.com/index.html#novel'>Debut Novel</a>
+                <div class='underline'></div>
+            </li>
+            <li class="current li-insightings"><a href='http://alikayarnell.com/blog'>Insightings</a>
+                <div class='underline'></div>
+            </li>
+            <li class="li-bio"><a href='http://alikayarnell.com/index.html#bio'>Biography</a>
+                <div class='underline'></div>
+            </li>
+        </ul>
+        <ul class="menu-overlay-social">
+            <li id="m-o-fb"></li>
+            <li class="mid-icon" id="m-o-ig"></li>
+            <li id="m-o-tw"></li>
+        </ul>
+    </div>
+    <div id="mobile-nav" class="fixed">
+        <div class="m-n-hamburger"></div>
+        <h1>Alika Yarnell</h1>
+        <div class="m-n-logo"></div>
+    </div>
+    <section id="insightings-home">
+        <div class="ins-container">
+            <div class="ins-article-contain">
+                {{#foreach posts}}
+                    {{#if featured}}
+                        <article class="img-left post">
+                            <div class="ins-article-img" style="background: url({{image}}) no-repeat center center;background-size:cover" id=""></div>
+                            <div class="ins-article-text">
+                                <div class="text-contain">
+                                    <h6 class="category cat1">{{tags}}</h6>
+                                    <h1>{{title}}</h1>
+                                    <p>{{excerpt words="26"}}</p>
+                                    <a class="read-more-mobile" href="{{url}}"><span>Read Article</span></a>
+                                </div>
+                            </div>
+                        </article>
+                    {{/if}}
+                {{/foreach}}
+                <div class="ins-after-contain clearfix">
+                    {{#foreach posts}}
+                        {{^if featured}}
+                        <article class="post">
+                            <div class="ins-article-img" style="background: url({{image}}) no-repeat center center;background-size:cover" id="ins-art-image-3"></div>
+                            <div class="ins-article-text">
+                                <div class="text-contain">
+                                    <h6 class="category cat3">{{tags}}</h6>
+                                    <h1>{{title}}</h1>
+                                    <p>{{excerpt words="26"}}</p>
+                                    <a href="{{url}}" class="read-more-mobile"><span>Read Article</span></a>
+                                </div>
+                            </div>
+                        </article>
+                        {{/if}}
+                    {{/foreach}}
+                </div>
+            </div>
+            <div id="cat-float" class="hide">
+                <div class="cat-float-contain">
+                    <div class="cat-bio-pic"></div>
+                    <h1 class="name">Alika Yarnell</h1>
+                    <div class="cat-div"></div>
+                    <h3>Writer, musicophile, film fanatic, photo dabbler, spiritualist, and yogini. </h3>
+                    <ul>
+                        <a href="http://www.facebook.com" target="_blank"><li class="cat-social-icon-fb"></li></a>
+                        <a href="http://www.twitter.com" target="_blank"><li class="cat-social-icon-tw"></li></a>
+                        <a href="http://www.instagram.com" target="_blank"><li class="last cat-social-icon-ig"></li></a>
+                    </ul>
+                    <div class="cat-div-2"></div>
+                    <h1 class="cat-title">Categories</h1>
+                    <div class="cat-div-3"></div>
+                </div>
+                <div id="bottom-triangle"></div>
+            </div>
+        </div>
+    </section>
+
+    {{#get "posts" include="tags,author"}}
+        {{#foreach posts}}
+            <span class="tags">{{tags}}</span>
+        {{/foreach}}
+    {{/get}}
+
+
+    <div id="ins-home-footer">
+        <a href="#ttt"><div id="scroll-btn"></div></a>
+    </div>
+
+    <script src="{{asset "./js/jquery.js"}}"></script>
+    <script src="{{asset "./js/jquery.waypoints.min.js"}}"></script>
+    <script src="{{asset "./js/app.js"}}"></script>
+    <script src="{{asset "./js/app2.js"}}"></script>
+    <script async src="{{asset "./js/tags-bundle.js"}}"></script>
+
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

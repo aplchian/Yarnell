@@ -1,0 +1,29 @@
+@import "susy";
+@import "breakpoint";
+@import "breakpoint";
+
+
+$ipad: ( columns: 12, container: 690px, global-box-sizing: border-box );
+$desktopsm: ( columns: 12, container: 992px, global-box-sizing: border-box );
+
+
+//IPAD
+@include susy-breakpoint(760px, $ipad){
+
+}
+
+
+//Desktop
+@include susy-breakpoint(992px, $desktopsm){
+
+  body{
+    #hero-content-contain{
+      width: 100% !important;
+  		height: 100vh !important;
+  		background: url('../images/hero-bg-lg.png') no-repeat !important;
+      background-size: inherit !important;
+
+    }
+  }
+
+}

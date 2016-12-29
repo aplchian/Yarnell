@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="{{asset "css/app.css"}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+
+</head>
+{{#post}}
+
+
+    <body id="ttt" class="post-body">
+        <nav class="hide" id="desktop-nav">
+            <ul>
+                <li id="home-nav"><a href="http://alikayarnell.com">Home</a>
+                    <div class='underline'></div>
+                </li>
+                <li id="novel-nav"><a href="http://alikayarnell.com/index#novel">Debut Novel</a>
+                    <div class='underline'></div>
+                </li>
+                <li id="nav-logo-desktop"></li>
+                <li class="current" id="insightings-nav"><a href="http://alikayarnell.com/blog">Insightings</a>
+                    <div class='underline'></div>
+                </li>
+                <li id="bio-nav" class="last"><a href="http://alikayarnell.com/index#bio">Biography</a>
+                    <div class='underline'></div>
+                </li>
+            </ul>
+        </nav>
+        <div class='menu-overlay hide'>
+            <div class="menu-overlay-exit"></div>
+            <div class="menu-overlay-logo"></div>
+            <ul class="menu-overlay-nav">
+                <li class="li-home"><a href='http://alikayarnell.com'>Home</a>
+                    <div class='underline'></div>
+                </li>
+                <li class="li-novel"><a href='http://alikayarnell.com/index.html#novel'>Debut Novel</a>
+                    <div class='underline'></div>
+                </li>
+                <li class="current li-insightings"><a href='http://alikayarnell.com/blog'>Insightings</a>
+                    <div class='underline'></div>
+                </li>
+                <li class="li-bio"><a href='http://alikayarnell.com/index#bio'>Biography</a>
+                    <div class='underline'></div>
+                </li>
+            </ul>
+            <ul class="menu-overlay-social">
+                <li id="m-o-fb"></li>
+                <li class="mid-icon" id="m-o-ig"></li>
+                <li id="m-o-tw"></li>
+            </ul>
+        </div>
+        <div id="mobile-nav" class="">
+            <div class="m-n-hamburger"></div>
+            <div class="m-n-logo"></div>
+        </div>
+
+        <section id="post-hero">
+            <div class="post-hero-content">
+                <h4 class="hero-category">{{tags}}</h4>
+                <h1 class="post-title">{{title}}</h1>
+                <div class="post-info-container">
+                    <div class="post-info-hero">
+                        <span class="date">{{date published_at format="DD MMM YYYY"}}</span>
+                        <span class="post-hero-icon"></span>
+                        <span class="time-read"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="post-body">
+            <div class="main-img-container"><img class="post-main-image" src="{{image}}" alt=""></div>
+            <aside class="post-share">
+                <div class="content-contain">
+                    <h3>share</h3>
+                    <div class="share-divider-post"></div>
+                    <ul>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <li class="twitter"></li>
+                        </a>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <li class="facebook"></li>
+                        </a>
+                        <a href="http://www.google.com" target="_blank">
+                            <li class="google"></li>
+                        </a>
+                    </ul>
+                </div>
+            </aside>
+            <div id="post-main-content" class="post-main-body-content">
+                {{content}}
+                <!-- <div class="desktop-ss-container">
+                  <div class="ss-content-contain">
+                    <div class="inner-contain">
+                      <div class="ss-position"><span class="current">2</span><span class="backslash">/</span><span class="total">9</span></div>
+                      <span class="ss-alt-text">Libero sodales Vitae gravida orci dictum. Proin elit odio, feugiat in aliquam ut, tristique eget metus lorem ipsum dolar.</span>
+                      <div class="ss-btn-container">
+                        <div class="left-btn"></div>
+                        <div class="right-btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+            </div>
+            <aside class="author">
+                <div class="author-content-contain">
+                    <div class="aside-author-picture"></div>
+                    <h4>Alika Yarnell</h4>
+                    <div class="aside-author-divider"></div>
+                    <div class="aside-author-snippet">Writer, musicophile, film fanatic, photo dabbler, spiritualist, and yogini.</div>
+                    <a href="http://www.twitter.com" target="_blank">
+                        <div class="aside-author-twitter"></div>
+                    </a>
+                    <div class="bottom-aside-triangle"></div>
+            </aside>
+
+            <article class="post-image-slideshow"></article>
+        </section>
+        <section id="post-author">
+            <div class="author-container">
+                <div id="author-post-pic"></div>
+                <h2 class="post-side-header">Alika Yarnell</h2>
+                <div class="post-m-divider"></div>
+                <p class="post-author-snippet">Writer, musicophile, film fanatic, photo dabbler, spiritualist, and yogini. </p>
+            </div>
+        </section>
+        <section id="share-article">
+            <h2 class="post-side-header">Share Article</h2>
+            <div class="post-m-divider"></div>
+            <a href="http://www.facebook.com" target="_blank">
+                <div class="shr-btn fb-share-btn">facebook</div>
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+                <div class="shr-btn tw-share-btn">twitter</div>
+            </a>
+            <a href="http://www.google.com" target="_blank">
+                <div class="shr-btn google-share-btn">google</div>
+            </a>
+        </section>
+        <section id="post-more-articles-widget">
+            {{#prev_post}}
+                <section class="more-article-widget">
+                    <article class="post">
+                        <div class="ins-article-img" style="background: url({{image}}) no-repeat center center;background-size:cover" id="ins-art-image-3"></div>
+                        <div class="ins-article-text">
+                            <div class="text-contain">
+                                <h6 class="category cat3">{{tags}}</h6>
+                                <h1>{{title}}</h1>
+                                <p>{{excerpt words="26"}}</p>
+                                <a href="{{url}}" class="read-more-mobile"><span>Read Article</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="slide-container">
+                        <ul class="slide-position">
+                            <li class="current prev-article"></li>
+                            <li class=" next-article"></li>
+                        </ul>
+                    </div>
+                </section>
+            {{/prev_post}}
+            {{#next_post}}
+                <section class="more-article-widget">
+                    <article class="post">
+                        <div class="ins-article-img" style="background: url({{image}}) no-repeat center center;background-size:cover" id="ins-art-image-3"></div>
+                        <div class="ins-article-text">
+                            <div class="text-contain">
+                                <h6 class="category cat3">{{tags}}</h6>
+                                <h1>{{title}}</h1>
+                                <p>{{excerpt words="26"}}</p>
+                                <a href="{{url}}" class="read-more-mobile"><span>Read Article</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="slide-container">
+                        <ul class="slide-position">
+                            <li class="prev-article"></li>
+                            <li class="next-article current"></li>
+                        </ul>
+                    </div>
+                </section>
+            {{/next_post}}
+
+        </section>
+        <section id="post-more-articles-widget-desktop">
+          {{#prev_post}}
+            <div class="post-widget fl">
+                <div class="img-widget-container" style="background: url({{image}}) no-repeat center center;background-size:cover">
+                    <span class="tag-more-widget">{{tags}}</span>
+                    <a href="{{url}}"><div class="desktop-widget-btn prev"></div></a>
+                </div>
+                <a href="{{url}}"><h3 class="desktop-widget-headline">{{title}}</h3></a>
+            </div>
+            {{/prev_post}}
+            {{#next_post}}
+            <div class="post-widget fr">
+                <div class="img-widget-container" style="background: url({{image}}) no-repeat center center;background-size:cover">
+                    <span class="tag-more-widget">{{tags}}</span>
+                    <a href="{{url}}"><div class="desktop-widget-btn next"></div></a>
+                </div>
+                <a href="{{url}}"><h3 class="desktop-widget-headline">{{title}}</h3></a>
+            </div>
+            {{/next_post}}
+        </section>
+
+
+        <footer id="post-footer">
+            <h2>Copyright © 2016 Alika Yarnell. All rights reserved.</h2>
+        </footer>
+
+{{/post}}
+
+
+
+<div id="ins-home-footer">
+    <a href="#ttt">
+        <div id="scroll-btn"></div>
+    </a>
+</div>
+
+<script src="{{asset "./js/jquery.js"}}"></script>
+<script src="{{asset "./js/jquery.waypoints.min.js"}}"></script>
+<script src="{{asset "./js/app.js"}}"></script>
+<script async src="{{asset "./js/reading-time.js"}}"></script>
+<script async src="{{asset "./js/post-bundle.js"}}"></script>
+
+
+</body>
+
+</html>
