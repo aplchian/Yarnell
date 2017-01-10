@@ -151,6 +151,7 @@ html {
 }
 
 body {
+
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -1253,6 +1254,20 @@ body {
 		}
 
 		p {
+			color: #808799;
+			font-family: $worksans;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+			margin: 0 0 33px;
+
+			a {
+				color: #d67387;
+				text-decoration: underline;
+			}
+		}
+
+    ol li {
 			color: #808799;
 			font-family: $worksans;
 			font-size: 14px;
@@ -2908,7 +2923,7 @@ body.post-body {
 							width: 260px;
 							content: "";
 							display: inline-block;
-							height: 53px;
+							height: 78px;
 							position: relative;
 							top: 57px;
 						}

@@ -10,8 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babelify": "^7.3.0",
+    "install": "^0.8.4",
     "node-sass": "^3.10.1",
     "nodemon": "^1.11.0",
+    "npm": "^4.0.5",
     "sass-loader": "^4.0.2",
     "susy": "^2.2.12",
     "webpack": "^1.13.3"
